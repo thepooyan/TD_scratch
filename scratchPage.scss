@@ -1,0 +1,35 @@
+$blueBg: #E6F5FF;
+$orange: #D99400;
+$blue: #295F98;
+
+#scratchPage {
+  background: $blueBg;
+  color: #363636;
+
+
+  header {
+
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+
+    .Title {
+      h1 {
+        font-size: 3rem;
+      }
+      p {
+        font-size: 2rem;
+      }
+      strong {
+        color: $orange;
+        font-weight: 900;
+      }
+    }
+
+    img {
+      width: 20rem;
+    }
+  }
+
+}
