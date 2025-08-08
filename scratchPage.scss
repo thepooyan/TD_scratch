@@ -6,20 +6,37 @@ $blue: #295F98;
   background: $blueBg;
   color: #363636;
 
+  button {
+    background: $blue;
+    color: white;
+    border-radius: .2rem;
+    padding: .1rem;
+  }
 
-  header {
-
+  .kidsHeader {
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
     align-items: center;
+    gap: 1rem;
+    padding: 1rem;
 
     .Title {
+      display: flex;
+      flex-direction: column;
+
+      span {
+        font-weight: 900;
+        font-size: 1rem;
+      }
       h1 {
         font-size: 3rem;
+        font-weight: 900;
+        padding-block: 1.5rem;
       }
       p {
-        font-size: 2rem;
+        font-size: 1rem;
+        text-align: center;
       }
       strong {
         color: $orange;
@@ -32,4 +49,11 @@ $blue: #295F98;
     }
   }
 
+
+  .kidsCloud {
+    font-size: .7rem;
+    background-image: url("/Content/images/kids/cloud.svg");
+    background-size: cover;
+    padding: 5rem 2rem;
+  }
 }
