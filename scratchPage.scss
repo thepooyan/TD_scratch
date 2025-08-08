@@ -76,11 +76,13 @@ $blue: #295F98;
   .terms {
 
     > .item {
+      --bg: #FFED32;
+      --text: #48150C;
       &::before {
         content: "";
-        background: #FFED32;
+        background: var(--bg);
         opacity: .3;
-        border-radius: .5rem;
+        border-radius: 1rem;
         position: absolute;
         width: 100%;
         height: 100%;
@@ -89,7 +91,7 @@ $blue: #295F98;
         z-index: -1;
       }
       position: relative;
-      color: #48150C;
+      color: #363636;
       width: 30rem;
       margin: auto;
       margin-bottom: 5rem;
@@ -97,16 +99,32 @@ $blue: #295F98;
       font-size: .8rem;
       font-weight: 900;
       z-index: 5;
-      transform: translateX(-7rem);
       width: 36rem;
+
+      &:nth-child(2n) {
+        transform: translateX(7rem);
+      }
+      &:nth-child(2n+1) {
+        transform: translateX(-7rem);
+      }
+      &:nth-child(2) {
+        --bg: #FF69DC;
+        --text: #94055C;
+      }
+      &:nth-child(3) {
+        --bg: #3EE8B1;
+        --text: #174259;
+      }
 
       h3 {
         margin-bottom: 1rem;
+        color: var(--text);
       }
       > div {
         display: grid;
         grid-template-columns: auto auto;
-        padding-inline: 1rem;
+        padding: 1rem 3rem;
+        gap: 0.3rem 0;
       }
 
       .btns {
@@ -118,6 +136,13 @@ $blue: #295F98;
         left: 0;
         right: 0;
         justify-content: center;
+
+        button:nth-child(1) {
+          width: 8rem;
+        }
+        button:nth-child(2) {
+          width: 16rem;
+        }
       }
 
       button {
