@@ -1,0 +1,151 @@
+@use "../source/Variables" as v;
+
+@mixin sixth-section {
+  width: 100%;
+  height: 587px;
+  position: relative;
+  overflow: hidden;
+
+  .opinions {
+
+    width: 100%;
+
+    /* margin: auto; */
+    height: 147px;
+
+    .your-opinion-text {
+      text-align: center;
+      font-size: 2em;
+      font-weight: 900;
+    }
+
+    p {
+      width: 745px;
+      margin: auto;
+      text-align: center;
+    }
+  }
+
+  .background-blue {
+    width: 600px;
+    height: 428px;
+    border-radius: 10px;
+    background-color: #C0DBF1;
+    position: relative;
+    z-index: -2;
+    transform: translate(-50%, 0);
+
+  }
+
+  .slid-container {
+    width: 66em;
+    height: 25em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    top: 9%;
+    transform: translate(-7%, 23%);
+    overflow: hidden;
+
+
+
+    .owl-stage-outer {
+      overflow: visible !important;
+    }
+
+    .owl-stage {
+      overflow: visible !important;
+    }
+
+    .owl-item {
+      padding: 1em; // فاصله بین آیتم‌ها
+    }
+
+    .owl-nav {
+      display: flex;
+      position: absolute;
+      width: 7em;
+      bottom: 0em;
+      right: 50%;
+      transform: translateX(50%);
+      align-items: center;
+      justify-content: space-between;
+      height: 3em;
+
+      .owl-prev,
+      .owl-next {
+        width: 3em;
+        height: 3em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: static; // 🔧 این باعث میشه flex به درستی کار کنه
+        border-radius: 50%;
+        background-color: #fff;
+
+        i {
+          font-size: 1.5em;
+        }
+      }
+    }
+
+
+
+    .item {
+      background-color: #fff;
+      border-radius: 0.6em;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+      transition: box-shadow 0.3s ease, transform 0.3s ease;
+
+      &:hover {
+        box-shadow: 0 10px 22px rgba(0, 0, 0, 0.15);
+        transform: translateY(-4px);
+      }
+
+      .name-container {
+        width: 99%;
+        height: 124px;
+        margin: auto;
+        display: flex;
+        align-items: center;
+
+        .stars {
+          font-size: 10px;
+        }
+
+        .img-container {
+          display: flex;
+          align-items: center;
+          padding-right: 1em;
+
+          img {
+            width: 100px;
+          }
+
+          .info-text {
+            margin-top: 1.5em;
+            margin-right: 0.8em;
+
+            p:nth-child(1) {
+              font-weight: 800;
+            }
+
+            .scratch-text {
+              font-size: 0.9em;
+            }
+          }
+        }
+      }
+
+      .opinions-text {
+        height: 8.5em;
+        padding-inline: 1.5em;
+      }
+
+    }
+
+
+
+  }
+}

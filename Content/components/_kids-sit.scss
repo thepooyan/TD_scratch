@@ -1,0 +1,187 @@
+@use "../source/Variables" as v;
+
+@mixin kids-sit {
+    .blue-container {
+        padding-block: 2em 12em;
+        width: 100%;
+        background-color: v.$lightBlue;
+        border-radius: 10px;
+
+        .title-container {
+            width: 735px;
+
+            margin: auto;
+            text-align: center;
+
+            .ways-to-learn {
+                color: v.$bluepapularcolor;
+                font-size: 2.5em;
+                font-weight: 900;
+            }
+
+            .top-btn-container {
+                width: 336px;
+                height: 72px;
+                margin: auto;
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                background-color: #fff;
+                border-radius: 10px;
+                margin: 20px auto;
+                
+
+                .special-kids {
+                    background-color: #f7c04a80;
+                    border: 2px solid #F7C04A;
+                    width: 150px;
+                    padding: 10px 10px;
+                    text-align: center;
+                    border-radius: 10px;
+                    font-weight: 900;
+
+                    &.active{
+                        background-color: #F7C04A;
+                    }
+                }
+            }
+        }
+
+        .card-container {
+            width: 285px;
+            background-color: #fff;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translate(-50%, 0px);
+            border-radius: 10px;
+            padding-block: 0 15px;
+
+
+
+
+            .light-blue {
+                width: 255px;
+                height: 118px;
+                margin: auto;
+                background-color: lightblue;
+                border-radius: 10px;
+                margin-top: 15px;
+                position: relative;
+
+                img {
+                    position: absolute;
+                    top: -48px;
+                    height: 166px;
+                }
+            
+            }
+
+            .content-container {
+                padding-block: 5px 0;
+
+                .card-title {
+                    text-align: center;
+                    font-size: 1em;
+                    padding-block: 15px 5px;
+                    font-weight: 900;
+                }
+
+                .content {
+                    font-size: 11px;
+                    padding: 0px 16px;
+                }
+            }
+
+            .options-container {
+                display: flex;
+                flex-direction: column;
+                margin-top: 15px;
+
+                .option {
+
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    padding-block: 5px;
+                    font-size: 11px;
+
+                    svg {
+                        width: 10%;
+                        height: 20px;
+
+                    }
+                }
+
+
+
+            }
+
+            .button-container {
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                padding-block: 1em 0;
+    
+                a {
+                    width: 120px;
+                    padding-block: 6px;
+                    text-align: center;
+                    border: 1px solid;
+                    border-radius: 10px;
+                    font-size: 12px;
+                    font-weight: 900;
+                    background-color: #9BE045;
+                    border: 1px solid rgba($color: #000000, $alpha: 20%);
+                }
+    
+                .card-button {
+                    background-color: #EDEDED;
+                }
+            }
+        }
+
+        .img-container {
+            position: relative;
+            display: none;
+    
+            .img-kids-sit {
+                width: 650px;
+                margin: auto;
+                margin-top: 9em;
+            }
+
+            &.active{
+                display: block;
+            }
+    
+        }
+
+        .owl-carousel{
+            margin-block: 7em 0px;
+            .card-container {
+                position: relative;
+                left: 0;
+                transform: translate(0,0);
+                margin-inline:auto ;
+            }
+            .owl-item{
+                display: flex;
+                align-items: end;
+                justify-content: center;
+                height: 400px;
+                
+            }
+        }
+
+        #owl-teens2{
+            display: none;
+
+            &.active{
+                display: block;
+            }
+        }
+
+    }
+
+}
