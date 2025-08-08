@@ -59,9 +59,15 @@ $blue: #295F98;
 
 
   .kidsCloud {
-    font-size: .7rem;
     background-image: url("/Content/images/kids/cloud.svg");
     background-size: cover;
-    padding: 5rem 2rem;
+    padding-block: 4rem;
+    display: flex;
+
+    p {
+      font-size: .7rem;
+      max-width: 50rem;
+      margin: auto;
+    }
   }
 }
