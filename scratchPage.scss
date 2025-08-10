@@ -200,7 +200,7 @@ $blue: #295F98;
       grid-template-columns: auto auto;
       justify-items: center;
       padding: 0 5rem;
-        padding-top: 10rem;
+      padding-top: 10rem;
       background: url("./Content/images/kids/starts background.webp");
 
       > span {
@@ -214,6 +214,7 @@ $blue: #295F98;
         height: 536px;
         padding: 1rem;
         border-radius: 1rem;
+        backdrop-filter: blur(6px);
 
         &:nth-of-type(2) {
           --bg: rgb(var(--color-2), .3);
