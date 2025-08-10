@@ -107,7 +107,7 @@ $blue: #295F98;
       width: 30rem;
       margin: auto;
       margin-bottom: 12rem;
-      padding: 2rem 2.4rem;
+      padding: 1rem 3.2rem;
       font-size: .8rem;
       font-weight: 900;
       z-index: 5;
@@ -140,6 +140,7 @@ $blue: #295F98;
       }
 
       h3 {
+        margin-top: 1.9rem;
         margin-bottom: 1rem;
         color: var(--text);
         font-size: 1.4rem;
@@ -148,8 +149,11 @@ $blue: #295F98;
       > div {
         display: grid;
         grid-template-columns: auto auto;
-        padding: 1rem 3rem;
-        gap: 0.3rem 0;
+        margin-right: 3.3rem;
+        gap: 0.3rem 3.7rem;
+        margin-bottom: 3rem;
+        font-size: 0.7rem;
+        font-weight: 600;
       }
 
       .btns {
