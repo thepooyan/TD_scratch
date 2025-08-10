@@ -114,6 +114,9 @@ $blue: #295F98;
 
       &:nth-child(2n) {
         transform: translateX(7rem);
+        &::after {
+          right: 33rem;
+        }
       }
       &:nth-child(2n+1) {
         transform: translateX(-7rem);
@@ -123,6 +126,7 @@ $blue: #295F98;
         --text: #94055C;
         &::after {
           filter: hue-rotate(-98.06475214925916deg);
+          transform: rotate(-70deg);
         }
       }
       &:nth-child(3) {
@@ -130,6 +134,7 @@ $blue: #295F98;
         --text: #174259;
         &::after {
           filter: hue-rotate(108.86466625842013deg);
+          transform: rotate(-30deg);
         }
       }
 
