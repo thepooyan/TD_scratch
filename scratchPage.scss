@@ -90,6 +90,16 @@ $blue: #295F98;
         right: 0;
         z-index: -1;
       }
+      &::after {
+        content: "";
+        width: 15rem;
+        height: 15rem;
+        background: url("./Content/images/kids/planet.webp");
+        position: absolute;
+        top: -3rem;
+        right: -10rem;
+        z-index: -2;
+      }
       position: relative;
       color: #363636;
       width: 30rem;
@@ -110,10 +120,16 @@ $blue: #295F98;
       &:nth-child(2) {
         --bg: #FF69DC;
         --text: #94055C;
+        &::after {
+          filter: hue-rotate(-98.06475214925916deg);
+        }
       }
       &:nth-child(3) {
         --bg: #3EE8B1;
         --text: #174259;
+        &::after {
+          filter: hue-rotate(108.86466625842013deg);
+        }
       }
 
       h3 {
