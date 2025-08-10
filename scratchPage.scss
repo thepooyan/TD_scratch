@@ -241,9 +241,27 @@ $blue: #295F98;
           bottom: calc(100% - 2.4rem);
         }
 
+        &::after {
+          content: "";
+          width: 9.9rem;
+          height: 12.7rem;
+          background: url("/Content/images/kids/astro 1.webp");
+          position: absolute;
+          right: 0px;
+          bottom: calc(100% - 0.7rem);
+          left: 0;
+          margin: auto;
+        }
+
         &:nth-of-type(2) {
           --bg: rgb(var(--color-2), .3);
           --text: var(--color-2-text);
+
+          &::after {
+            background: url("/Content/images/kids/astro 2.webp");
+            width: 11.2rem;
+            height: 11.3rem;
+          }
         }
         &:nth-of-type(3) {
           --bg: rgb(var(--color-3), .3);
