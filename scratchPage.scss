@@ -212,7 +212,8 @@ $blue: #295F98;
         margin-bottom: 1rem;
         width: 508px;
         height: 536px;
-        padding: 1rem;
+        padding: 1rem 2rem;
+        padding-top: 5rem;
         border-radius: 1rem;
         backdrop-filter: blur(6px);
         font-size: .7rem;
@@ -227,7 +228,7 @@ $blue: #295F98;
         ul li {
           list-style-type: disc; /* default bullets */
           list-style-position: inside;
-          padding-right: 1.5em;  /* indent */
+          padding-right: 3.5em;  /* indent */
         }
 
         &:nth-of-type(2) {
