@@ -1,3 +1,4 @@
+@use "./Content/source/_Variables.scss" as v;
 $blueBg: #E6F5FF;
 $orange: #D99400;
 $blue: #295F98;
@@ -276,6 +277,20 @@ $blue: #295F98;
       }
     }
   }
+
+  @include v.media(v.$screen) {
+    display: none;
+  }
+  @include v.media(v.$laptop) {
+    display: none;
+  }
+  @include v.media(v.$tablet) {
+    display: none;
+  }
+  @include v.media(v.$mobile) {
+    display: none;
+  }
+
 }
 
 @keyframes bounceUpDown {
