@@ -193,20 +193,31 @@ $blue: #295F98;
     .termContent {
       --bg: rgb(var(--color-1), .3);
       --text: var(--color-1-text);
-      background: var(--bg);
-      margin-bottom: 1rem;
-      width: 508px;
-      height: 536px;
-      padding: 1rem;
-      border-radius: 1rem;
+      display: grid;
+      grid-template-columns: auto auto;
+      justify-items: center;
+      padding: 0 5rem;
 
-      &:nth-child(2) {
-        --bg: rgb(var(--color-2), .3);
-        --text: var(--color-2-text);
+      > span {
+        opacity: 0;
       }
-      &:nth-child(3) {
-        --bg: rgb(var(--color-3), .3);
-        --text: var(--color-3-text);
+
+      > div {
+        background: var(--bg);
+        margin-bottom: 1rem;
+        width: 508px;
+        height: 536px;
+        padding: 1rem;
+        border-radius: 1rem;
+
+        &:nth-of-type(2) {
+          --bg: rgb(var(--color-2), .3);
+          --text: var(--color-2-text);
+        }
+        &:nth-of-type(3) {
+          --bg: rgb(var(--color-3), .3);
+          --text: var(--color-3-text);
+        }
       }
     }
   }
