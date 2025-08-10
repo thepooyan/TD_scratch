@@ -82,7 +82,7 @@ $blue: #295F98;
         content: "";
         background: rgb(var(--bg), .3);
         backdrop-filter: blur(4px);
-        border-radius: 1rem;
+        border-radius: 1.3rem;
         position: absolute;
         width: 100%;
         height: 100%;
@@ -98,7 +98,7 @@ $blue: #295F98;
         background: url("./Content/images/kids/planet.webp");
         position: absolute;
         top: -3rem;
-        right: -10rem;
+        right: -11.3rem;
         z-index: -2;
         animation: bounceUpDown 4s ease-in-out infinite;
       }
@@ -106,7 +106,7 @@ $blue: #295F98;
       color: #363636;
       width: 30rem;
       margin: auto;
-      margin-bottom: 5rem;
+      margin-bottom: 12rem;
       padding: 2rem 2.4rem;
       font-size: .8rem;
       font-weight: 900;
@@ -183,9 +183,9 @@ $blue: #295F98;
 
 @keyframes bounceUpDown {
   0%, 100% {
-    transform: translateY(0);
+    top: -20px;
   }
   50% {
-    transform: translateY(30px);
+    top: -80px;
   }
 }
