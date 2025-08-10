@@ -94,12 +94,13 @@ $blue: #295F98;
       &::after {
         content: "";
         width: 15rem;
-        height: 15rem;
+        height: 16rem;
         background: url("./Content/images/kids/planet.webp");
         position: absolute;
         top: -3rem;
         right: -10rem;
         z-index: -2;
+        animation: bounceUpDown 4s ease-in-out infinite;
       }
       position: relative;
       color: #363636;
@@ -177,5 +178,14 @@ $blue: #295F98;
         }
       }
     }
+  }
+}
+
+@keyframes bounceUpDown {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(30px);
   }
 }
