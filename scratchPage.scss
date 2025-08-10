@@ -76,12 +76,12 @@ $blue: #295F98;
   .terms {
 
     > .item {
-      --bg: #FFED32;
+      --bg: 255, 237, 50;    /* #FFED32 */
       --text: #48150C;
       &::before {
         content: "";
-        background: var(--bg);
-        opacity: .3;
+        background: rgb(var(--bg), .3);
+        backdrop-filter: blur(12px);
         border-radius: 1rem;
         position: absolute;
         width: 100%;
@@ -118,14 +118,14 @@ $blue: #295F98;
         transform: translateX(-7rem);
       }
       &:nth-child(2) {
-        --bg: #FF69DC;
+        --bg: 255, 105, 220;   /* #FF69DC */
         --text: #94055C;
         &::after {
           filter: hue-rotate(-98.06475214925916deg);
         }
       }
       &:nth-child(3) {
-        --bg: #3EE8B1;
+        --bg: 62, 232, 177;    /* #3EE8B1 */
         --text: #174259;
         &::after {
           filter: hue-rotate(108.86466625842013deg);
