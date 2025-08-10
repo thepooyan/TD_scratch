@@ -118,6 +118,9 @@ $blue: #295F98;
       z-index: 5;
       width: 36rem;
 
+      &:last-child() {
+        margin-bottom: 0;
+      }
       &:nth-child(2n) {
         transform: translateX(7rem);
         &::after {
@@ -197,6 +200,8 @@ $blue: #295F98;
       grid-template-columns: auto auto;
       justify-items: center;
       padding: 0 5rem;
+        padding-top: 10rem;
+      background: url("./Content/images/kids/starts background.webp");
 
       > span {
         opacity: 0;
