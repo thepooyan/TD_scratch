@@ -80,6 +80,8 @@ $blue: #295F98;
 
   .terms {
 
+    background: url("./Content/images/kids/long line.svg");
+
     > .item {
       --bg: 255, 237, 50;    /* #FFED32 */
       --text: #48150C;
@@ -193,80 +195,80 @@ $blue: #295F98;
       }
     }
 
-    .termContent {
-      --bg: rgb(var(--color-1), .3);
-      --text: var(--color-1-text);
-      display: grid;
-      grid-template-columns: auto auto;
-      justify-items: center;
-      padding: 0 5rem;
-      padding-top: 10rem;
-      background: url("./Content/images/kids/starts background.webp");
+  }
+  .termContent {
+    --bg: rgb(var(--color-1), .3);
+    --text: var(--color-1-text);
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-items: center;
+    padding: 0 5rem;
+    padding-top: 10rem;
+    background: url("./Content/images/kids/starts background.webp");
 
-      > span {
-        opacity: 0;
+    > span {
+      opacity: 0;
+    }
+
+    > div {
+      background: var(--bg);
+      margin-bottom: 1rem;
+      width: 508px;
+      height: 536px;
+      padding: 3.7rem 1.6rem 1rem;
+      border-radius: 1rem;
+      backdrop-filter: blur(6px);
+      font-size: .7rem;
+      font-weight: 700;
+      position: relative;
+
+      h3 {
+        font-weight: 900;
+        font-size: .8rem;
+        margin-bottom: 1rem;
       }
 
-      > div {
-        background: var(--bg);
-        margin-bottom: 1rem;
-        width: 508px;
-        height: 536px;
-        padding: 3.7rem 1.6rem 1rem;
-        border-radius: 1rem;
-        backdrop-filter: blur(6px);
-        font-size: .7rem;
-        font-weight: 700;
-        position: relative;
+      ul li {
+        list-style-type: disc; /* default bullets */
+        list-style-position: inside;
+        padding-right: 3.5em;  /* indent */
+      }
 
-        h3 {
-          font-weight: 900;
-          font-size: .8rem;
-          margin-bottom: 1rem;
-        }
+      &::before {
+        content: "";
+        width: 22.3rem;
+        height: 8rem;
+        background: url("./Content/images/kids/small cloud.webp");
+        position: absolute;
+        right: 0;
+        bottom: calc(100% - 2.4rem);
+      }
 
-        ul li {
-          list-style-type: disc; /* default bullets */
-          list-style-position: inside;
-          padding-right: 3.5em;  /* indent */
-        }
+      &::after {
+        content: "";
+        width: 9.9rem;
+        height: 12.7rem;
+        background: url("/Content/images/kids/astro 1.webp");
+        position: absolute;
+        right: 0px;
+        bottom: calc(100% - 0.7rem);
+        left: 0;
+        margin: auto;
+      }
 
-        &::before {
-          content: "";
-          width: 22.3rem;
-          height: 8rem;
-          background: url("./Content/images/kids/small cloud.webp");
-          position: absolute;
-          right: 0;
-          bottom: calc(100% - 2.4rem);
-        }
+      &:nth-of-type(2) {
+        --bg: rgb(var(--color-2), .3);
+        --text: var(--color-2-text);
 
         &::after {
-          content: "";
-          width: 9.9rem;
-          height: 12.7rem;
-          background: url("/Content/images/kids/astro 1.webp");
-          position: absolute;
-          right: 0px;
-          bottom: calc(100% - 0.7rem);
-          left: 0;
-          margin: auto;
+          background: url("/Content/images/kids/astro 2.webp");
+          width: 11.2rem;
+          height: 11.3rem;
         }
-
-        &:nth-of-type(2) {
-          --bg: rgb(var(--color-2), .3);
-          --text: var(--color-2-text);
-
-          &::after {
-            background: url("/Content/images/kids/astro 2.webp");
-            width: 11.2rem;
-            height: 11.3rem;
-          }
-        }
-        &:nth-of-type(3) {
-          --bg: rgb(var(--color-3), .3);
-          --text: var(--color-3-text);
-        }
+      }
+      &:nth-of-type(3) {
+        --bg: rgb(var(--color-3), .3);
+        --text: var(--color-3-text);
       }
     }
   }
