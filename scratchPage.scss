@@ -176,11 +176,16 @@ $blue: #295F98;
         right: 0;
         justify-content: center;
 
-        button:nth-child(1) {
-          width: 8rem;
-        }
-        button:nth-child(2) {
-          width: 16rem;
+        button {
+          font-size: .7rem;
+          font-weight: 800;
+
+          &:nth-child(1) {
+            width: 8rem;
+          }
+          &:nth-child(2) {
+            width: 16rem;
+          }
         }
       }
 
