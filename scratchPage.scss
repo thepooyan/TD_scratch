@@ -7,6 +7,7 @@ $blue: #295F98;
   background: $blueBg;
   color: #363636;
   padding-top: 4rem;
+  overflow: hidden;
   --color-1: 255, 237, 50;    /* #FFED32 */
   --color-1-text: #48150C;
   --color-2: 255, 105, 220;   /* #FF69DC */
@@ -26,7 +27,7 @@ $blue: #295F98;
     flex-direction: row-reverse;
     justify-content: center;
     align-items: center;
-    gap: 5rem;
+    gap: 3rem;
     padding: 1rem;
 
     .Title {
@@ -53,7 +54,7 @@ $blue: #295F98;
         font-weight: 900;
       }
       button {
-        width: 25rem;
+        width: 23rem;
         font-weight: bold;
         margin-top: 3rem;
       }
