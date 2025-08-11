@@ -275,12 +275,17 @@ $blue: #295F98;
       &:nth-of-type(3) {
         --bg: rgb(var(--color-3), .3);
         --text: var(--color-3-text);
+        &::after {
+          background: url("/Content/images/kids/astro 3.webp");
+          width: 13.2rem;
+          height: 14rem;
+        }
       }
     }
   }
 
   @include v.media(v.$screen) {
-    display: none;
+
   }
   @include v.media(v.$laptop) {
     display: none;
