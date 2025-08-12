@@ -126,13 +126,13 @@ $blue: #295F98;
         margin-bottom: 0;
       }
       &:nth-child(2n) {
-        transform: translateX(7rem);
+        transform: translateX(6rem);
         &::after {
           right: 33rem;
         }
       }
       &:nth-child(2n+1) {
-        transform: translateX(-7rem);
+        transform: translateX(-6rem);
       }
       &:nth-child(2) {
         --bg: 255, 105, 220;   /* #FF69DC */
