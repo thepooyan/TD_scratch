@@ -367,6 +367,14 @@ $blue: #295F98;
       }
       img {width: 20rem}
     }
+    .kidsCloud {
+      --font-scale: 1.4;
+      p {
+        line-height: 1.4rem;
+        padding-block: 3rem;
+        font-weight: 700;
+      }
+    }
     .terms .item {
       > div {
         margin-inline: 0;
