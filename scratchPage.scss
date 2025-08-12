@@ -315,7 +315,7 @@ $blue: #295F98;
     }
   }
   @include v.media(v.$laptop) {
-
+    display: none;
   }
   @include v.media(v.$tablet) {
     display: none;
