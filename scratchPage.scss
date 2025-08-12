@@ -250,6 +250,8 @@ $blue: #295F98;
         width: 22.3rem;
         height: 8rem;
         background: url("./Content/images/kids/small cloud.webp");
+        background-repeat: no-repeat;
+        background-size: cover;
         position: absolute;
         right: 0;
         bottom: calc(100% - 2.4rem);
@@ -260,10 +262,12 @@ $blue: #295F98;
         width: 9.9rem;
         height: 12.7rem;
         background: url("/Content/images/kids/astro 1.webp");
+        background-size: contain;
+        background-repeat: no-repeat;
         position: absolute;
         right: 0px;
         bottom: calc(100% - 0.7rem);
-        left: 0;
+        left: 0px;
         margin: auto;
       }
 
@@ -272,7 +276,7 @@ $blue: #295F98;
         --text: var(--color-2-text);
 
         &::after {
-          background: url("/Content/images/kids/astro 2.webp");
+          background-image: url("/Content/images/kids/astro 2.webp");
           width: 11.2rem;
           height: 11.3rem;
         }
@@ -281,7 +285,7 @@ $blue: #295F98;
         --bg: rgb(var(--color-3), .3);
         --text: var(--color-3-text);
         &::after {
-          background: url("/Content/images/kids/astro 3.webp");
+          background-image: url("/Content/images/kids/astro 3.webp");
           width: 13.2rem;
           height: 14rem;
         }
@@ -372,7 +376,10 @@ $blue: #295F98;
       }
     }
     .termContent {
-      padding-inline: .3rem;
+      padding-inline: 1rem;
+      > div {
+        width: 100%;
+      }
     }
 
   }
