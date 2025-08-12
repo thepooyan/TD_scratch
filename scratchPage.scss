@@ -7,6 +7,7 @@ $blue: #295F98;
   background: $blueBg;
   color: #363636;
   padding-top: 4rem;
+  overflow: hidden;
   --color-1: 255, 237, 50;    /* #FFED32 */
   --color-1-text: #48150C;
   --color-2: 255, 105, 220;   /* #FF69DC */
@@ -26,7 +27,7 @@ $blue: #295F98;
     flex-direction: row-reverse;
     justify-content: center;
     align-items: center;
-    gap: 5rem;
+    gap: 3rem;
     padding: 1rem;
 
     .Title {
@@ -53,7 +54,7 @@ $blue: #295F98;
         font-weight: 900;
       }
       button {
-        width: 25rem;
+        width: 23rem;
         font-weight: bold;
         margin-top: 3rem;
       }
@@ -125,13 +126,13 @@ $blue: #295F98;
         margin-bottom: 0;
       }
       &:nth-child(2n) {
-        transform: translateX(7rem);
+        transform: translateX(6rem);
         &::after {
           right: 33rem;
         }
       }
       &:nth-child(2n+1) {
-        transform: translateX(-7rem);
+        transform: translateX(-6rem);
       }
       &:nth-child(2) {
         --bg: 255, 105, 220;   /* #FF69DC */
@@ -274,21 +275,47 @@ $blue: #295F98;
       &:nth-of-type(3) {
         --bg: rgb(var(--color-3), .3);
         --text: var(--color-3-text);
-
         &::after {
           background: url("/Content/images/kids/astro 3.webp");
-          width: 13.1rem;
-          height: 14.1rem;
+          width: 13.2rem;
+          height: 14rem;
         }
       }
     }
   }
 
   @include v.media(v.$screen) {
-    display: none;
+    .kidsHeader {
+      img {
+        opacity: .3;
+        object-position: right;
+      }
+      flex-direction: row;
+      padding-left: 0;
+      gap: 0;
+      justify-content: space-between;
+    }
+    .kidsCloud {margin-bottom: 2rem;}
+    .terms {
+      background-image: none;
+      .item {
+        &::after {
+          animation: bounceRightLeft 4s ease-in-out infinite;
+          left: 0 !important;
+          right: 0 !important;
+          bottom: 15rem;
+          margin: auto !important;
+        }
+        transform: none !important;
+      }
+    }
+    .termContent {
+      grid-template-columns: auto;
+      gap: 3rem 0;
+    }
   }
   @include v.media(v.$laptop) {
-    display: none;
+
   }
   @include v.media(v.$tablet) {
     display: none;
@@ -305,5 +332,13 @@ $blue: #295F98;
   }
   50% {
     top: -80px;
+  }
+}
+@keyframes bounceRightLeft {
+  0%, 100% {
+    transform: translateX(30px);
+  }
+  50% {
+    transform: translateX(-30px);
   }
 }
