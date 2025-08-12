@@ -85,7 +85,8 @@ $blue: #295F98;
 
   .terms {
     background: url("./Content/images/kids/long line.svg") no-repeat;
-    background-position: 60% 42%;
+    background-position: calc(50% + 2rem) 10rem;
+    background-size: 33rem;
 
     > .item {
       --bg: 255, 237, 50;    /* #FFED32 */
