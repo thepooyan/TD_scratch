@@ -106,6 +106,8 @@ $blue: #295F98;
         width: 15rem;
         height: 16rem;
         background: url("./Content/images/kids/planet.webp");
+        background-size: cover;
+        background-repeat: no-repeat;
         position: absolute;
         top: -3rem;
         right: -11.3rem;
@@ -345,7 +347,29 @@ $blue: #295F98;
     }
   }
   @include v.media(v.$tablet) {
-    display: none;
+    .kidsHeader {
+      padding: .5rem;
+      margin-bottom: 2rem;
+      .Title {
+        --font-scale: 0.4;
+        h1,p {margin-bottom: 0;}
+        p,span {--font-scale: .6;text-align: right;}
+        h1 {padding-block: 1rem;}
+        button {width: 9rem;}
+      }
+      img {width: 11rem}
+    }
+    .terms .item {
+      > div {
+        margin-inline: 0;
+      }
+      &::after {
+        bottom: 22rem;
+        width: 11rem;
+        height: 12rem;
+      }
+    }
+
   }
   @include v.media(v.$mobile) {
     display: none;
