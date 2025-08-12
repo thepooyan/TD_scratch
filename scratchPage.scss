@@ -305,10 +305,12 @@ $blue: #295F98;
           margin: auto !important;
         }
         transform: none !important;
-
       }
     }
-
+    .termContent {
+      grid-template-columns: auto;
+      gap: 3rem 0;
+    }
   }
   @include v.media(v.$laptop) {
     display: none;
