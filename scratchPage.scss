@@ -295,6 +295,19 @@ $blue: #295F98;
       gap: 0;
       justify-content: space-between;
     }
+    .terms {
+      background-image: none;
+      .item {
+        &::after {
+          animation: none;
+          left: 0 !important;
+          right: 0 !important;
+          margin: auto !important;
+        }
+        transform: none !important;
+
+      }
+    }
 
   }
   @include v.media(v.$laptop) {
