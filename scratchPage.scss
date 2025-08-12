@@ -358,11 +358,14 @@ $blue: #295F98;
       .Title {
         --font-scale: 0.6;
         h1,p {margin-bottom: 0;}
-        p,span {--font-scale: .8;text-align: right;}
+        p,span {
+          --font-scale: .8;text-align: right;
+          font-weight: 900;
+        }
         h1 {padding-block: 1rem;text-wrap: nowrap;}
-        button {width: 10rem;margin-top: 1rem;}
+        button {width: 12rem;margin-top: 1rem;}
       }
-      img {width: 11rem}
+      img {width: 20rem}
     }
     .terms .item {
       > div {
