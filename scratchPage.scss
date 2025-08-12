@@ -295,13 +295,15 @@ $blue: #295F98;
       gap: 0;
       justify-content: space-between;
     }
+    .kidsCloud {margin-bottom: 2rem;}
     .terms {
       background-image: none;
       .item {
         &::after {
-          animation: none;
+          animation: bounceRightLeft 4s ease-in-out infinite;
           left: 0 !important;
           right: 0 !important;
+          bottom: 15rem;
           margin: auto !important;
         }
         transform: none !important;
@@ -313,7 +315,7 @@ $blue: #295F98;
     }
   }
   @include v.media(v.$laptop) {
-    display: none;
+
   }
   @include v.media(v.$tablet) {
     display: none;
@@ -330,5 +332,13 @@ $blue: #295F98;
   }
   50% {
     top: -80px;
+  }
+}
+@keyframes bounceRightLeft {
+  0%, 100% {
+    transform: translateX(30px);
+  }
+  50% {
+    transform: translateX(-30px);
   }
 }
