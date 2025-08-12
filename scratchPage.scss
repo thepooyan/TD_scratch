@@ -309,7 +309,6 @@ $blue: #295F98;
       background-image: none;
       .item {
         &::after {
-          animation: bounceRightLeft 4s ease-in-out infinite;
           left: 0 !important;
           right: 0 !important;
           bottom: 15rem;
@@ -354,7 +353,7 @@ $blue: #295F98;
   }
   @include v.media(v.$tablet) {
     .kidsHeader {
-      padding: .5rem;
+      padding: 1rem;
       margin-bottom: 2rem;
       .Title {
         --font-scale: 0.6;
