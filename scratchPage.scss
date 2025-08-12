@@ -77,7 +77,9 @@ $blue: #295F98;
       font-size: calc(.7rem * var(--font-scale));
       max-width: 50rem;
       margin-inline: auto;
-      padding-inline: 1rem;
+      padding-inline: 2rem;
+      line-height: 1.2rem;
+      text-align: justify;
     }
   }
 
@@ -351,11 +353,11 @@ $blue: #295F98;
       padding: .5rem;
       margin-bottom: 2rem;
       .Title {
-        --font-scale: 0.4;
+        --font-scale: 0.6;
         h1,p {margin-bottom: 0;}
-        p,span {--font-scale: .6;text-align: right;}
-        h1 {padding-block: 1rem;}
-        button {width: 9rem;}
+        p,span {--font-scale: .8;text-align: right;}
+        h1 {padding-block: 1rem;text-wrap: nowrap;}
+        button {width: 10rem;margin-top: 1rem;}
       }
       img {width: 11rem}
     }
@@ -369,12 +371,13 @@ $blue: #295F98;
         height: 12rem;
       }
     }
+    .termContent {
+      padding-inline: .3rem;
+    }
 
   }
   @include v.media(v.$mobile) {
-    display: none;
   }
-
 }
 
 @keyframes bounceUpDown {
