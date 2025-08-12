@@ -320,7 +320,27 @@ $blue: #295F98;
     .kidsHeader {
       --font-scale: .8;
       .Title button {
-        width: 10rem;
+        width: 17rem;
+      }
+    }
+    .terms {
+      padding: 1rem;
+      .item {
+        --font-scale: 1.2;
+        width: 100%;
+        &::after {
+          bottom: 22.9rem;
+        }
+        > div {
+          grid-template-columns: auto;
+        }
+        .btns {
+          margin: 0;
+          button {
+            &:nth-child(1) {display: none;}
+            &:nth-child(2) {width: 90%;}
+          }
+        }
       }
     }
   }
