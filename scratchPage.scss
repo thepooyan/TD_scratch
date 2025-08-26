@@ -307,7 +307,7 @@ $blue: #295F98;
   }
 
   .seventh-section {
-    max-width: 51rem;
+    max-width: 1240px;
     margin-top: 10rem !important;
     font-size: .7rem;
     @include kidsSeven.seventh-section;
@@ -391,7 +391,7 @@ $blue: #295F98;
       --font-scale: 1;
       p {
         line-height: 1.4rem;
-        padding-block: 3rem;
+        padding-block: 8rem;
         font-weight: 700;
       }
     }
