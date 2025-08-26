@@ -401,6 +401,9 @@ $blue: #295F98;
       padding-inline: 1rem;
       > div {
         width: 100%;
+        ul li {
+          padding: 0;
+        }
       }
     }
 
