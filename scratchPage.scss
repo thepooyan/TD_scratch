@@ -1,4 +1,5 @@
 @use "./Content/source/_Variables.scss" as v;
+@use "./Content/components/kidsSeven";
 $blueBg: #E6F5FF;
 $orange: #D99400;
 $blue: #295F98;
@@ -303,6 +304,13 @@ $blue: #295F98;
         }
       }
     }
+  }
+
+  .seventh-section {
+    max-width: 51rem;
+    margin-top: 10rem !important;
+    font-size: .7rem;
+    @include kidsSeven.seventh-section;
   }
 
   @include v.media(v.$screen) {
