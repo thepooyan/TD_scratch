@@ -245,7 +245,7 @@ $blue: #295F98;
       }
 
       ul li {
-        font-size: calc(var(--text-md) * var(--font-scale));
+        @include f.text-size(md);
         list-style-type: disc; /* default bullets */
         list-style-position: inside;
         padding-right: 3.5em;  /* indent */
