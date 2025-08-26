@@ -377,22 +377,21 @@ $blue: #295F98;
       padding: 1rem;
       margin-bottom: 2rem;
       .Title {
-        /* --font-scale: 0.6; */
+        --font-scale: 0.8;
         h1,p {margin-bottom: 0;}
         p,span {
           /* --font-scale: .8;*/
           text-align: right; 
           font-weight: 900;
         }
-        h1 {padding-block: 1rem;text-wrap: nowrap;}
+        h1 {padding-block: 1rem;text-wrap: nowrap;margin-bottom: 2rem;}
         button {width: 12rem;margin-top: 1rem;}
       }
-      img {width: 20rem}
+      img {width: 20rem; transform: translate(6rem) translateY(6rem);}
     }
     .kidsCloud {
       /* --font-scale: 1; */
       p {
-        line-height: 1.4rem;
         padding-block: 8rem;
         font-weight: 700;
       }
