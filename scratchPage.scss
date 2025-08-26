@@ -88,6 +88,10 @@ $blue: #295F98;
     background-position: calc(50% + 2rem) 10rem;
     background-size: 33rem;
 
+    &.single {
+      background: none;
+    }
+
     > .item {
       --bg: 255, 237, 50;    /* #FFED32 */
       --text: #48150C;
