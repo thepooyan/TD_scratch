@@ -216,11 +216,8 @@ $blue: #295F98;
   .termContent {
     --bg: rgb(var(--color-1), .3);
     --text: var(--color-1-text);
-    display: grid;
-    grid-template-columns: auto auto;
-    justify-items: center;
     padding: 0 5rem;
-    padding-top: 20rem;
+    padding-top: 5rem;
     background: url("./Content/images/kids/starts background.webp");
 
     > span {
@@ -229,8 +226,8 @@ $blue: #295F98;
 
     > div {
       background: var(--bg);
+      margin-top: 11rem;
       margin-bottom: 1rem;
-      width: 508px;
       padding: 3.7rem 1.6rem 2rem 1rem;
       border-radius: 1rem;
       backdrop-filter: blur(6px);
@@ -258,7 +255,6 @@ $blue: #295F98;
         background-repeat: no-repeat;
         background-size: cover;
         position: absolute;
-        right: 0;
         left: 0;
         margin: auto;
         bottom: calc(100% - 2.4rem);
@@ -272,10 +268,19 @@ $blue: #295F98;
         background-size: contain;
         background-repeat: no-repeat;
         position: absolute;
-        right: 0px;
         bottom: calc(100% - 0.7rem);
-        left: 0px;
+        left: 6rem;
         margin: auto;
+      }
+
+      &:nth-child(2n) {
+        &::after, &::before {
+          left: unset;
+          right: 0;
+        }
+        &::after {
+          right: 4rem;
+        }
       }
 
       &:nth-of-type(2) {
