@@ -8,7 +8,6 @@
   margin-top: 50px;
   .right {
     width: 566px;
-    height: 31em;
     position: relative;
 
     @media (max-width: 1150px) {
@@ -25,7 +24,7 @@
       height: 150px;
       border-radius: 10px;
       position: absolute;
-      font-size: 1.5em;
+      font-size: var(--text-xl);
       text-align: center;
       display: flex;
       align-items: center;
@@ -74,7 +73,7 @@
       position: absolute;
       bottom: 0;
       left: 0;
-      font-size: 1.5em;
+      font-size: var(--text-xl);
       text-align: center;
       display: flex;
       align-items: center;
@@ -105,7 +104,7 @@
       border-radius: 10px;
       display: flex;
       align-items: center;
-      font-size: 1.5em;
+      font-size: var(--text-2xl);
       padding-right: 15px;
       color: black;
       font-weight: 900;
@@ -122,6 +121,7 @@
         border: 1px solid rgba(0, 0, 0, 0.1);
         border-radius: 0.4em;
         margin: auto;
+        font-size: var(--text-md);
         margin-bottom: 3px;
         padding: 0.8em 1em;
         width: 605px;

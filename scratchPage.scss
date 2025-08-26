@@ -9,6 +9,7 @@ $blue: #295F98;
   background: $blueBg;
   color: #363636;
   padding-top: 4rem;
+  padding-bottom: 4rem;
   overflow: hidden;
   --color-1: 255, 237, 50;    /* #FFED32 */
   --color-1-text: #48150C;
@@ -39,7 +40,7 @@ $blue: #295F98;
 
       span {
         font-weight: 900;
-        font-size: calc(var(--text-2xl) * var(--font-scale));
+        @include f.text-size(2xl)
       }
       h1 {
         font-size: calc(var(--text-6xl) * var(--font-scale));
@@ -77,7 +78,7 @@ $blue: #295F98;
     transform: translateY(-5rem);
 
     p {
-      font-size: calc(var(--text-md) * var(--font-scale));
+      @include f.text-size(md);
       max-width: 50rem;
       margin-inline: auto;
       padding-inline: 2rem;
@@ -309,9 +310,8 @@ $blue: #295F98;
   }
 
   .seventh-section {
-    max-width: 1240px;
+    max-width: 75rem;
     margin-top: 10rem !important;
-    font-size: .7rem;
     @include kidsSeven.seventh-section;
   }
 
