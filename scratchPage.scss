@@ -375,13 +375,13 @@ $blue: #295F98;
     }
     .terms {
       padding: 1rem;
-      .item {
+      > .item {
         /* --font-scale: 1.2; */
         width: 100%;
         &::after {
           bottom: 22.9rem;
         }
-        > div {
+        > .grid {
           grid-template-columns: auto;
           .mobileOnly {
             display: flex;
@@ -392,8 +392,8 @@ $blue: #295F98;
         .btns {
           margin: 0;
           button {
-            &:nth-child(1) {display: none;}
-            &:nth-child(2) {width: 90%;}
+            &:nth-child(1) {width: 90%;}
+            &:nth-child(2) {display: none;}
           }
         }
       }
@@ -424,7 +424,7 @@ $blue: #295F98;
       }
     }
     .terms .item {
-      > div {
+      > .grid {
         margin-inline: 0;
       }
       &::after {
@@ -435,7 +435,7 @@ $blue: #295F98;
     }
     .termContent {
       padding-inline: 1rem;
-      > div {
+      > .grid {
         width: 100%;
         ul li {
           padding: 0;
