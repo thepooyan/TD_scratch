@@ -170,7 +170,7 @@ $blue: #295F98;
         font-size: calc(var(--text-xl) * var(--font-scale));
         font-weight: 900;
       }
-      > div {
+      > .grid {
         display: grid;
         grid-template-columns: auto auto;
         margin-right: 3.3rem;
