@@ -84,6 +84,10 @@ $blue: #295F98;
       text-align: justify;
     }
   }
+  .starsBg {
+    background: url("./Content/images/kids/starts background.webp");
+    padding-block: 5rem;
+  }
 
   .terms {
     background: url("./Content/images/kids/long line.svg") no-repeat;
@@ -236,7 +240,6 @@ $blue: #295F98;
     --text: var(--color-1-text);
     padding: 0 5rem;
     padding-top: 5rem;
-    background: url("./Content/images/kids/starts background.webp");
 
     > span {
       opacity: 0;
@@ -326,7 +329,7 @@ $blue: #295F98;
 
   .seventh-section {
     max-width: 75rem;
-    margin-top: 10rem !important;
+    /* margin-top: 10rem !important; */
     @include kidsSeven.seventh-section;
   }
 
