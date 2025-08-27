@@ -72,15 +72,15 @@ $blue: #295F98;
 
   .kidsCloud {
     background-image: url("/Content/images/kids/cloud.svg");
-    background-size: cover;
-    padding-block: 15vw;
-    transform: translateY(-5rem);
+    background-size: contain;
+    padding-block: 3rem;
+    margin-top: -4rem;
 
     p {
       @include f.text-size(md);
       max-width: 50rem;
       margin-inline: auto;
-      padding-inline: 2rem;
+      padding-block: 3rem;
       text-align: justify;
     }
   }
