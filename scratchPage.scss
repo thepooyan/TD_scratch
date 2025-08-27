@@ -178,6 +178,20 @@ $blue: #295F98;
         margin-bottom: 3rem;
         font-size: calc(var(--text-md) * var(--font-scale));
         font-weight: 600;
+
+        .mobileOnly {
+          display: none;
+        }
+        i {
+          color: var(--text);
+          width: 25px;
+          height: 25px;
+          display: inline-flex;
+          justify-content: center;
+          align-items: center;
+          font-size: var(--text-lg);
+          margin-left: .5rem;
+        }
       }
 
       .btns {
@@ -361,6 +375,11 @@ $blue: #295F98;
         }
         > div {
           grid-template-columns: auto;
+          .mobileOnly {
+            display: flex;
+            align-items: center;
+            gap: .5rem;
+          }
         }
         .btns {
           margin: 0;
