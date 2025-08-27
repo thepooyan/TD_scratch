@@ -73,7 +73,7 @@ $blue: #295F98;
   .kidsCloud {
     background-image: url("/Content/images/kids/cloud.svg");
     background-size: cover;
-    padding-block: 2rem;
+    padding-block: 5vw;
     margin-top: -6rem;
     position: relative;
     z-index: 10;
@@ -218,10 +218,10 @@ $blue: #295F98;
           font-weight: 800;
 
           &:nth-child(1) {
-            width: 10rem;
+            width: 16rem;
           }
           &:nth-child(2) {
-            width: 16rem;
+            width: 10rem;
           }
         }
       }
