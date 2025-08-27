@@ -78,7 +78,7 @@ $blue: #295F98;
     position: relative;
     z-index: 10;
 
-    p {
+    .content {
       @include f.text-size(md);
       font-weight: bold;
       max-width: 50rem;
