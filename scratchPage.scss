@@ -347,7 +347,6 @@ $blue: #295F98;
       gap: 0;
       justify-content: space-between;
     }
-    .kidsCloud {margin-bottom: 2rem;}
     .terms {
       background-image: none;
       .item {
@@ -363,6 +362,9 @@ $blue: #295F98;
     .termContent {
       grid-template-columns: auto;
       gap: 3rem 0;
+      > div ul li {
+        padding-right: 0rem;
+      }
     }
   }
   @include v.media(v.$laptop) {
@@ -422,6 +424,10 @@ $blue: #295F98;
         padding-block: 8rem;
         font-weight: 700;
       }
+    }
+    .starsBg {
+      padding-top: 20rem;
+      margin-top: -10rem;
     }
     .terms .item {
       > .grid {
